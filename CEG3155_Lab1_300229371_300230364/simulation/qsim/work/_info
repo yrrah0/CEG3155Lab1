@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\lehar\Documents\CEG3155\simulation\qsim
+vLab1
+Z1 I]d;nim:l5R7Q>gg9z7OU93
+Z2 Vj0ElD_C?m4D7=dT^[fLk73
+Z3 dC:\Users\lehar\Documents\CEG3155\simulation\qsim
+Z4 w1696449049
+Z5 8Lab1.vo
+Z6 FLab1.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@lab1
+Z10 !s100 fdG?dP^CHG7R_M_g9Oc2a0
+Z11 !s108 1696449050.685000
+Z12 !s107 Lab1.vo|
+Z13 !s90 -work|work|Lab1.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vLab1_vlg_check_tst
+Z14 I3=m`eizQ57ULVJ;UN4@c61
+Z15 VH6f>bFKOLJ@;5@Ee:3CNF2
+R3
+Z16 w1696449048
+Z17 8Lab1.vt
+Z18 FLab1.vt
+L0 67
+R7
+r1
+31
+Z19 !s108 1696449050.752000
+Z20 !s107 Lab1.vt|
+Z21 !s90 -work|work|Lab1.vt|
+R8
+Z22 n@lab1_vlg_check_tst
+Z23 !s100 fniAAHmAMIc`D6IO9EH1R1
+!i10b 1
+!s85 0
+!s101 -O0
+vLab1_vlg_sample_tst
+Z24 IHA;CXY1C?bJ5N7W^5dDjO0
+Z25 V0hEidb;4[m>iFSj0J2dUa0
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+31
+R19
+R20
+R21
+R8
+Z26 n@lab1_vlg_sample_tst
+Z27 !s100 S8QeNfE5GY9<j:El:h0m<3
+!i10b 1
+!s85 0
+!s101 -O0
+vLab1_vlg_vec_tst
+Z28 IGcIeL1nlRnG]f5a>A:6<i1
+Z29 V>3Db?=LcTVS[mUL^Ae4EN2
+R3
+R16
+R17
+R18
+Z30 L0 314
+R7
+r1
+31
+R19
+R20
+R21
+R8
+Z31 n@lab1_vlg_vec_tst
+Z32 !s100 b14M_B<iAGPCJ0MhM9L1R2
+!i10b 1
+!s85 0
+!s101 -O0
+vtestLab
+Z33 !s100 [McmhMJDmfKYCKOZ>@3J12
+Z34 Inj3QP@gnYciZ:`2PO=96]3
+Z35 V799FLL@LaLWoCh^lnXmGM1
+Z36 dC:\Users\lehar\Documents\CEG3155_Lab1_300229371_300230364\simulation\qsim
+Z37 w1696639733
+R5
+R6
+L0 31
+R7
+r1
+31
+R13
+R8
+Z38 ntest@lab
+!i10b 1
+!s85 0
+Z39 !s108 1696639735.336000
+R12
+!s101 -O0
+vtestLab_vlg_check_tst
+!i10b 1
+Z40 !s100 ad3ng30bHWkEGTzmMz@h;3
+Z41 IIagMO`=6o=b?4@D;l3U^B0
+Z42 VAzVO_8@iX7?_ak]X9?3?63
+R36
+R37
+R17
+R18
+L0 69
+R7
+r1
+!s85 0
+31
+Z43 !s108 1696639735.393000
+Z44 !s107 Lab1.vt|
+R21
+!s101 -O0
+R8
+Z45 ntest@lab_vlg_check_tst
+vtestLab_vlg_sample_tst
+!i10b 1
+Z46 !s100 d_Z>9VDJbfg4zKk<7j<A;0
+Z47 I?AiBCeI80_AR@2V=32jXa3
+Z48 V:AT3A4dFQfoRGnX=f?kPk2
+R36
+R37
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R43
+R44
+R21
+!s101 -O0
+R8
+Z49 ntest@lab_vlg_sample_tst
+vtestLab_vlg_vec_tst
+!i10b 1
+Z50 !s100 C]IMD>CN32>^DTL<LIVlU1
+Z51 IC]bU@SS<DfZMShoi=1J5>1
+Z52 V^>;Cddl^8M=VIIoZQ<>j:0
+R36
+R37
+R17
+R18
+Z53 L0 620
+R7
+r1
+!s85 0
+31
+R43
+R44
+R21
+!s101 -O0
+R8
+Z54 ntest@lab_vlg_vec_tst

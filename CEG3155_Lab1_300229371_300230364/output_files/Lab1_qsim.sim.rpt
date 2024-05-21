@@ -1,0 +1,284 @@
+Simulator report for Lab1_qsim
+Wed Oct 04 21:28:43 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 108 nodes    ;
+; Simulation Coverage         ;      77.57 % ;
+; Total Number of Transitions ; 2183         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                  ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                             ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                   ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                    ;               ;
+; Vector input source                                                                        ; Z:/ssent069/Documents/CEG3155/CEG3155/rightshiftwf.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                     ; On            ;
+; Check outputs                                                                              ; Off                                                    ; Off           ;
+; Report simulation coverage                                                                 ; On                                                     ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                     ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                     ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                     ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                    ; Off           ;
+; Detect glitches                                                                            ; Off                                                    ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                    ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                    ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                    ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                    ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                     ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                             ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                    ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                    ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                   ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport                                              ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport                                              ; Transport     ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      77.57 % ;
+; Total nodes checked                                 ; 108          ;
+; Total output ports checked                          ; 107          ;
+; Total output ports with complete 1/0-value coverage ; 83           ;
+; Total output ports with no 1/0-value coverage       ; 13           ;
+; Total output ports with no 1-value coverage         ; 20           ;
+; Total output ports with no 0-value coverage         ; 17           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                              ;
++-------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                 ; Output Port Name                                                                          ; Output Port Type ;
++-------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+------------------+
+; |testLab|outAR                                                                            ; |testLab|outAR                                                                            ; pin_out          ;
+; |testLab|clock                                                                            ; |testLab|clock                                                                            ; out              ;
+; |testLab|load                                                                             ; |testLab|load                                                                             ; out              ;
+; |testLab|outputBit[6]                                                                     ; |testLab|outputBit[6]                                                                     ; pin_out          ;
+; |testLab|outputBit[5]                                                                     ; |testLab|outputBit[5]                                                                     ; pin_out          ;
+; |testLab|outputBit[4]                                                                     ; |testLab|outputBit[4]                                                                     ; pin_out          ;
+; |testLab|outputBit[3]                                                                     ; |testLab|outputBit[3]                                                                     ; pin_out          ;
+; |testLab|outputBit[2]                                                                     ; |testLab|outputBit[2]                                                                     ; pin_out          ;
+; |testLab|outputBit[1]                                                                     ; |testLab|outputBit[1]                                                                     ; pin_out          ;
+; |testLab|shift                                                                            ; |testLab|shift                                                                            ; out              ;
+; |testLab|leftshift8bitregister:inst12|comb~0                                              ; |testLab|leftshift8bitregister:inst12|comb~0                                              ; out0             ;
+; |testLab|leftshift8bitregister:inst12|comb~2                                              ; |testLab|leftshift8bitregister:inst12|comb~2                                              ; out0             ;
+; |testLab|leftshift8bitregister:inst12|comb~3                                              ; |testLab|leftshift8bitregister:inst12|comb~3                                              ; out0             ;
+; |testLab|leftshift8bitregister:inst12|comb~4                                              ; |testLab|leftshift8bitregister:inst12|comb~4                                              ; out0             ;
+; |testLab|leftshift8bitregister:inst12|comb~5                                              ; |testLab|leftshift8bitregister:inst12|comb~5                                              ; out0             ;
+; |testLab|leftshift8bitregister:inst12|comb~6                                              ; |testLab|leftshift8bitregister:inst12|comb~6                                              ; out0             ;
+; |testLab|leftshift8bitregister:inst12|comb~7                                              ; |testLab|leftshift8bitregister:inst12|comb~7                                              ; out0             ;
+; |testLab|leftshift8bitregister:inst12|comb~8                                              ; |testLab|leftshift8bitregister:inst12|comb~8                                              ; out0             ;
+; |testLab|leftshift8bitregister:inst12|comb~9                                              ; |testLab|leftshift8bitregister:inst12|comb~9                                              ; out0             ;
+; |testLab|leftshift8bitregister:inst12|comb~10                                             ; |testLab|leftshift8bitregister:inst12|comb~10                                             ; out0             ;
+; |testLab|leftshift8bitregister:inst12|comb~11                                             ; |testLab|leftshift8bitregister:inst12|comb~11                                             ; out0             ;
+; |testLab|leftshift8bitregister:inst12|comb~12                                             ; |testLab|leftshift8bitregister:inst12|comb~12                                             ; out0             ;
+; |testLab|leftshift8bitregister:inst12|comb~13                                             ; |testLab|leftshift8bitregister:inst12|comb~13                                             ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:slaveLatch|int_sSignal  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:slaveLatch|int_sSignal  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:masterLatch|int_sSignal ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:masterLatch|int_sSignal ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b1|enabledSRLatch:slaveLatch|int_sSignal  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b1|enabledSRLatch:slaveLatch|int_sSignal  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b1|enabledSRLatch:slaveLatch|int_rSignal  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b1|enabledSRLatch:slaveLatch|int_rSignal  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b1|enabledSRLatch:slaveLatch|int_q~0      ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b1|enabledSRLatch:slaveLatch|int_q~0      ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b1|enabledSRLatch:slaveLatch|int_qBar~0   ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b1|enabledSRLatch:slaveLatch|int_qBar~0   ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b1|enabledSRLatch:masterLatch|int_sSignal ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b1|enabledSRLatch:masterLatch|int_sSignal ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b1|enabledSRLatch:masterLatch|int_rSignal ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b1|enabledSRLatch:masterLatch|int_rSignal ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b1|enabledSRLatch:masterLatch|int_q~0     ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b1|enabledSRLatch:masterLatch|int_q~0     ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b1|enabledSRLatch:masterLatch|int_qBar~0  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b1|enabledSRLatch:masterLatch|int_qBar~0  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b2|enabledSRLatch:slaveLatch|int_sSignal  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b2|enabledSRLatch:slaveLatch|int_sSignal  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b2|enabledSRLatch:slaveLatch|int_rSignal  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b2|enabledSRLatch:slaveLatch|int_rSignal  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b2|enabledSRLatch:slaveLatch|int_q~0      ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b2|enabledSRLatch:slaveLatch|int_q~0      ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b2|enabledSRLatch:slaveLatch|int_qBar~0   ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b2|enabledSRLatch:slaveLatch|int_qBar~0   ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b2|enabledSRLatch:masterLatch|int_sSignal ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b2|enabledSRLatch:masterLatch|int_sSignal ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b2|enabledSRLatch:masterLatch|int_rSignal ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b2|enabledSRLatch:masterLatch|int_rSignal ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b2|enabledSRLatch:masterLatch|int_q~0     ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b2|enabledSRLatch:masterLatch|int_q~0     ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b2|enabledSRLatch:masterLatch|int_qBar~0  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b2|enabledSRLatch:masterLatch|int_qBar~0  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b3|enabledSRLatch:slaveLatch|int_sSignal  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b3|enabledSRLatch:slaveLatch|int_sSignal  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b3|enabledSRLatch:slaveLatch|int_rSignal  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b3|enabledSRLatch:slaveLatch|int_rSignal  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b3|enabledSRLatch:slaveLatch|int_q~0      ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b3|enabledSRLatch:slaveLatch|int_q~0      ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b3|enabledSRLatch:slaveLatch|int_qBar~0   ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b3|enabledSRLatch:slaveLatch|int_qBar~0   ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b3|enabledSRLatch:masterLatch|int_sSignal ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b3|enabledSRLatch:masterLatch|int_sSignal ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b3|enabledSRLatch:masterLatch|int_rSignal ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b3|enabledSRLatch:masterLatch|int_rSignal ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b3|enabledSRLatch:masterLatch|int_q~0     ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b3|enabledSRLatch:masterLatch|int_q~0     ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b3|enabledSRLatch:masterLatch|int_qBar~0  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b3|enabledSRLatch:masterLatch|int_qBar~0  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b4|enabledSRLatch:slaveLatch|int_sSignal  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b4|enabledSRLatch:slaveLatch|int_sSignal  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b4|enabledSRLatch:slaveLatch|int_rSignal  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b4|enabledSRLatch:slaveLatch|int_rSignal  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b4|enabledSRLatch:slaveLatch|int_q~0      ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b4|enabledSRLatch:slaveLatch|int_q~0      ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b4|enabledSRLatch:slaveLatch|int_qBar~0   ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b4|enabledSRLatch:slaveLatch|int_qBar~0   ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b4|enabledSRLatch:masterLatch|int_sSignal ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b4|enabledSRLatch:masterLatch|int_sSignal ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b4|enabledSRLatch:masterLatch|int_rSignal ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b4|enabledSRLatch:masterLatch|int_rSignal ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b4|enabledSRLatch:masterLatch|int_q~0     ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b4|enabledSRLatch:masterLatch|int_q~0     ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b4|enabledSRLatch:masterLatch|int_qBar~0  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b4|enabledSRLatch:masterLatch|int_qBar~0  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b5|enabledSRLatch:slaveLatch|int_sSignal  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b5|enabledSRLatch:slaveLatch|int_sSignal  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b5|enabledSRLatch:slaveLatch|int_rSignal  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b5|enabledSRLatch:slaveLatch|int_rSignal  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b5|enabledSRLatch:slaveLatch|int_q~0      ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b5|enabledSRLatch:slaveLatch|int_q~0      ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b5|enabledSRLatch:slaveLatch|int_qBar~0   ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b5|enabledSRLatch:slaveLatch|int_qBar~0   ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b5|enabledSRLatch:masterLatch|int_sSignal ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b5|enabledSRLatch:masterLatch|int_sSignal ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b5|enabledSRLatch:masterLatch|int_rSignal ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b5|enabledSRLatch:masterLatch|int_rSignal ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b5|enabledSRLatch:masterLatch|int_q~0     ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b5|enabledSRLatch:masterLatch|int_q~0     ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b5|enabledSRLatch:masterLatch|int_qBar~0  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b5|enabledSRLatch:masterLatch|int_qBar~0  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b6|enabledSRLatch:slaveLatch|int_sSignal  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b6|enabledSRLatch:slaveLatch|int_sSignal  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b6|enabledSRLatch:slaveLatch|int_rSignal  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b6|enabledSRLatch:slaveLatch|int_rSignal  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b6|enabledSRLatch:slaveLatch|int_q~0      ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b6|enabledSRLatch:slaveLatch|int_q~0      ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b6|enabledSRLatch:slaveLatch|int_qBar~0   ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b6|enabledSRLatch:slaveLatch|int_qBar~0   ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b6|enabledSRLatch:masterLatch|int_sSignal ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b6|enabledSRLatch:masterLatch|int_sSignal ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b6|enabledSRLatch:masterLatch|int_rSignal ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b6|enabledSRLatch:masterLatch|int_rSignal ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b6|enabledSRLatch:masterLatch|int_q~0     ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b6|enabledSRLatch:masterLatch|int_q~0     ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b6|enabledSRLatch:masterLatch|int_qBar~0  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b6|enabledSRLatch:masterLatch|int_qBar~0  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b7|enabledSRLatch:slaveLatch|int_rSignal  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b7|enabledSRLatch:slaveLatch|int_rSignal  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b7|enabledSRLatch:masterLatch|int_rSignal ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b7|enabledSRLatch:masterLatch|int_rSignal ; out0             ;
+; |testLab|enARdFF_2:inst|enabledSRLatch:slaveLatch|int_sSignal                             ; |testLab|enARdFF_2:inst|enabledSRLatch:slaveLatch|int_sSignal                             ; out0             ;
+; |testLab|enARdFF_2:inst|enabledSRLatch:slaveLatch|int_rSignal                             ; |testLab|enARdFF_2:inst|enabledSRLatch:slaveLatch|int_rSignal                             ; out0             ;
+; |testLab|enARdFF_2:inst|enabledSRLatch:slaveLatch|int_q~0                                 ; |testLab|enARdFF_2:inst|enabledSRLatch:slaveLatch|int_q~0                                 ; out0             ;
+; |testLab|enARdFF_2:inst|enabledSRLatch:slaveLatch|int_qBar~0                              ; |testLab|enARdFF_2:inst|enabledSRLatch:slaveLatch|int_qBar~0                              ; out0             ;
+; |testLab|enARdFF_2:inst|enabledSRLatch:masterLatch|int_sSignal                            ; |testLab|enARdFF_2:inst|enabledSRLatch:masterLatch|int_sSignal                            ; out0             ;
+; |testLab|enARdFF_2:inst|enabledSRLatch:masterLatch|int_rSignal                            ; |testLab|enARdFF_2:inst|enabledSRLatch:masterLatch|int_rSignal                            ; out0             ;
+; |testLab|enARdFF_2:inst|enabledSRLatch:masterLatch|int_q~0                                ; |testLab|enARdFF_2:inst|enabledSRLatch:masterLatch|int_q~0                                ; out0             ;
+; |testLab|enARdFF_2:inst|enabledSRLatch:masterLatch|int_qBar~0                             ; |testLab|enARdFF_2:inst|enabledSRLatch:masterLatch|int_qBar~0                             ; out0             ;
++-------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                 ;
++-------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                 ; Output Port Name                                                                          ; Output Port Type ;
++-------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+------------------+
+; |testLab|outputBit[7]                                                                     ; |testLab|outputBit[7]                                                                     ; pin_out          ;
+; |testLab|rightInput[7]                                                                    ; |testLab|rightInput[7]                                                                    ; out              ;
+; |testLab|rightInput[6]                                                                    ; |testLab|rightInput[6]                                                                    ; out              ;
+; |testLab|rightInput[5]                                                                    ; |testLab|rightInput[5]                                                                    ; out              ;
+; |testLab|rightInput[4]                                                                    ; |testLab|rightInput[4]                                                                    ; out              ;
+; |testLab|rightInput[3]                                                                    ; |testLab|rightInput[3]                                                                    ; out              ;
+; |testLab|rightInput[2]                                                                    ; |testLab|rightInput[2]                                                                    ; out              ;
+; |testLab|rightInput[1]                                                                    ; |testLab|rightInput[1]                                                                    ; out              ;
+; |testLab|rightInput[0]                                                                    ; |testLab|rightInput[0]                                                                    ; out              ;
+; |testLab|leftshift8bitregister:inst12|comb~1                                              ; |testLab|leftshift8bitregister:inst12|comb~1                                              ; out0             ;
+; |testLab|leftshift8bitregister:inst12|comb~14                                             ; |testLab|leftshift8bitregister:inst12|comb~14                                             ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:slaveLatch|int_rSignal  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:slaveLatch|int_rSignal  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:slaveLatch|int_q~0      ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:slaveLatch|int_q~0      ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:masterLatch|int_rSignal ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:masterLatch|int_rSignal ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:masterLatch|int_q~0     ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:masterLatch|int_q~0     ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:masterLatch|int_qBar~0  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:masterLatch|int_qBar~0  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b7|enabledSRLatch:slaveLatch|int_sSignal  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b7|enabledSRLatch:slaveLatch|int_sSignal  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b7|enabledSRLatch:slaveLatch|int_qBar~0   ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b7|enabledSRLatch:slaveLatch|int_qBar~0   ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b7|enabledSRLatch:masterLatch|int_sSignal ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b7|enabledSRLatch:masterLatch|int_sSignal ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b7|enabledSRLatch:masterLatch|int_qBar~0  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b7|enabledSRLatch:masterLatch|int_qBar~0  ; out0             ;
++-------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                 ;
++-------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                 ; Output Port Name                                                                          ; Output Port Type ;
++-------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+------------------+
+; |testLab|outputBit[0]                                                                     ; |testLab|outputBit[0]                                                                     ; pin_out          ;
+; |testLab|rightInput[7]                                                                    ; |testLab|rightInput[7]                                                                    ; out              ;
+; |testLab|rightInput[6]                                                                    ; |testLab|rightInput[6]                                                                    ; out              ;
+; |testLab|rightInput[5]                                                                    ; |testLab|rightInput[5]                                                                    ; out              ;
+; |testLab|rightInput[4]                                                                    ; |testLab|rightInput[4]                                                                    ; out              ;
+; |testLab|rightInput[3]                                                                    ; |testLab|rightInput[3]                                                                    ; out              ;
+; |testLab|rightInput[2]                                                                    ; |testLab|rightInput[2]                                                                    ; out              ;
+; |testLab|rightInput[1]                                                                    ; |testLab|rightInput[1]                                                                    ; out              ;
+; |testLab|rightInput[0]                                                                    ; |testLab|rightInput[0]                                                                    ; out              ;
+; |testLab|leftshift8bitregister:inst12|comb~14                                             ; |testLab|leftshift8bitregister:inst12|comb~14                                             ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:slaveLatch|int_rSignal  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:slaveLatch|int_rSignal  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:slaveLatch|int_qBar~0   ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:slaveLatch|int_qBar~0   ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:masterLatch|int_rSignal ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:masterLatch|int_rSignal ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:masterLatch|int_q~0     ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:masterLatch|int_q~0     ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:masterLatch|int_qBar~0  ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:masterLatch|int_qBar~0  ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b7|enabledSRLatch:slaveLatch|int_q~0      ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b7|enabledSRLatch:slaveLatch|int_q~0      ; out0             ;
+; |testLab|leftshift8bitregister:inst12|enARdFF_2:b7|enabledSRLatch:masterLatch|int_q~0     ; |testLab|leftshift8bitregister:inst12|enARdFF_2:b7|enabledSRLatch:masterLatch|int_q~0     ; out0             ;
++-------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Oct 04 21:28:41 2023
+Info: Command: quartus_sim --simulation_results_format=VWF Lab1 -c Lab1_qsim
+Info (324025): Using vector source file "Z:/ssent069/Documents/CEG3155/CEG3155/rightshiftwf.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      77.57 %
+Info (328052): Number of transitions in simulation is 2183
+Info (324045): Vector file Lab1_qsim.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 340 megabytes
+    Info: Processing ended: Wed Oct 04 21:28:43 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

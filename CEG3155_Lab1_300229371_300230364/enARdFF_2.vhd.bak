@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity enARdFF_2 is
+	port(
+		i_reset : in std_logic;
+		i_d,i_enable,i_clock : in std_logic;
+		o_q: out std_logic);
+end enARdFF_2;
+
+architecture rtl of leftshift8bitregister is
+	signal int_value: std_logic;
+
+	begin
+		--component instantiation
+		  
+			--Output Driver
+				o_value <= int_value;
+
+end rtl;

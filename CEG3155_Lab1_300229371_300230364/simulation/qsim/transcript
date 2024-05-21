@@ -1,0 +1,38 @@
+# do Lab1.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testLab
+# 
+# Top level modules:
+# 	testLab
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testLab_vlg_sample_tst
+# -- Compiling module testLab_vlg_check_tst
+# -- Compiling module testLab_vlg_vec_tst
+# 
+# Top level modules:
+# 	testLab_vlg_vec_tst
+# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.testLab_vlg_vec_tst 
+# Loading work.testLab_vlg_vec_tst
+# Loading work.testLab
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading work.testLab_vlg_sample_tst
+# Loading work.testLab_vlg_check_tst
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: ssent069  Hostname: 1850-W2023A-049  ProcessID: 8604
+# 
+#           Attempting to use alternate WLF file "./wlftts3jxm".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftts3jxm
+# 
+# Simulation passed !
+# ** Note: $finish    : Lab1.vt(616)
+#    Time: 1 us  Iteration: 0  Instance: /testLab_vlg_vec_tst/tb_out

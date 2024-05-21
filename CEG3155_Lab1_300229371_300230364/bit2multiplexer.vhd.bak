@@ -1,0 +1,29 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity bit2multiplexer is
+	port(
+		i_left,i_right: in std_logic;
+		i_op0,i_op1,i_op2,i_op3: in std_logic_vector(7 downto 0);
+		i_clock: in std_logic;
+		o_value: out std_logic_vector(7 downto 0);
+		)
+end bit2multiplexer;
+
+architecture rtl of rightshift8bitregister is
+	signal int_value: std_logic_vector (7 downto 0);
+	signal int_clock: std_logic;
+	signal int_op0,int_op1,int_op2,int_op3: std_logic;
+	
+
+	begin
+		--concurrent signal assignment
+		  int_clock <= i_clock
+		  int_op0 <= i_op0,
+		  int_op1 <= i_op1,
+		  int_op2 <= i_op2,
+		  int_op3 <= i_op3;
+			
+			--Output Driver
+				o_value <= i_op0 or (i_op1 and not(i_left) and (i_right)) or (i_op2 and (i_left) and not(i_right)) or(i_op3 and (i_left) and (i_right));
+end rtl;

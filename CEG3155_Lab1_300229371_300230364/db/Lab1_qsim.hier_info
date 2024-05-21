@@ -1,0 +1,304 @@
+|testLab
+outAR <= enARdFF_2:inst.o_q
+clock => enARdFF_2:inst.i_clock
+clock => leftshift8bitregister:inst12.i_clock
+load => enARdFF_2:inst.i_d
+outputBit[0] <= leftshift8bitregister:inst12.o_value[0]
+outputBit[1] <= leftshift8bitregister:inst12.o_value[1]
+outputBit[2] <= leftshift8bitregister:inst12.o_value[2]
+outputBit[3] <= leftshift8bitregister:inst12.o_value[3]
+outputBit[4] <= leftshift8bitregister:inst12.o_value[4]
+outputBit[5] <= leftshift8bitregister:inst12.o_value[5]
+outputBit[6] <= leftshift8bitregister:inst12.o_value[6]
+outputBit[7] <= leftshift8bitregister:inst12.o_value[7]
+reset => leftshift8bitregister:inst12.i_reset
+shift => leftshift8bitregister:inst12.i_leftshift
+rightInput[0] => leftshift8bitregister:inst12.i_value[0]
+rightInput[1] => leftshift8bitregister:inst12.i_value[1]
+rightInput[2] => leftshift8bitregister:inst12.i_value[2]
+rightInput[3] => leftshift8bitregister:inst12.i_value[3]
+rightInput[4] => leftshift8bitregister:inst12.i_value[4]
+rightInput[5] => leftshift8bitregister:inst12.i_value[5]
+rightInput[6] => leftshift8bitregister:inst12.i_value[6]
+rightInput[7] => leftshift8bitregister:inst12.i_value[7]
+
+
+|testLab|enARdFF_2:inst
+i_clock => enabledSRLatch:slaveLatch.i_enable
+i_clock => enabledSRLatch:masterLatch.i_enable
+i_d => enabledSRLatch:masterLatch.i_set
+i_d => enabledSRLatch:masterLatch.i_reset
+o_q <= enabledSRLatch:slaveLatch.o_q
+o_qBar <= enabledSRLatch:slaveLatch.o_qBar
+
+
+|testLab|enARdFF_2:inst|enabledSRLatch:masterLatch
+i_set => int_sSignal.IN0
+i_reset => int_rSignal.IN0
+i_enable => int_sSignal.IN1
+i_enable => int_rSignal.IN1
+o_q <= o_q~0.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_qBar~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testLab|enARdFF_2:inst|enabledSRLatch:slaveLatch
+i_set => int_sSignal.IN0
+i_reset => int_rSignal.IN0
+i_enable => int_sSignal.IN1
+i_enable => int_rSignal.IN1
+o_q <= o_q~0.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_qBar~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testLab|leftshift8bitregister:inst12
+i_reset => ~NO_FANOUT~
+i_leftshift => comb~0.IN1
+i_leftshift => comb~2.IN1
+i_leftshift => comb~4.IN1
+i_leftshift => comb~6.IN1
+i_leftshift => comb~8.IN1
+i_leftshift => comb~10.IN1
+i_leftshift => comb~12.IN1
+i_leftshift => comb~14.IN0
+i_clock => enARdFF_2:b7.i_clock
+i_clock => enARdFF_2:b6.i_clock
+i_clock => enARdFF_2:b5.i_clock
+i_clock => enARdFF_2:b4.i_clock
+i_clock => enARdFF_2:b3.i_clock
+i_clock => enARdFF_2:b2.i_clock
+i_clock => enARdFF_2:b1.i_clock
+i_clock => enARdFF_2:b0.i_clock
+i_value[0] => comb~14.IN1
+i_value[1] => comb~13.IN1
+i_value[2] => comb~11.IN1
+i_value[3] => comb~9.IN1
+i_value[4] => comb~7.IN1
+i_value[5] => comb~5.IN1
+i_value[6] => comb~3.IN1
+i_value[7] => comb~1.IN1
+o_value[0] <= enARdFF_2:b0.o_q
+o_value[1] <= enARdFF_2:b1.o_q
+o_value[2] <= enARdFF_2:b2.o_q
+o_value[3] <= enARdFF_2:b3.o_q
+o_value[4] <= enARdFF_2:b4.o_q
+o_value[5] <= enARdFF_2:b5.o_q
+o_value[6] <= enARdFF_2:b6.o_q
+o_value[7] <= enARdFF_2:b7.o_q
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b7
+i_clock => enabledSRLatch:slaveLatch.i_enable
+i_clock => enabledSRLatch:masterLatch.i_enable
+i_d => enabledSRLatch:masterLatch.i_set
+i_d => enabledSRLatch:masterLatch.i_reset
+o_q <= enabledSRLatch:slaveLatch.o_q
+o_qBar <= enabledSRLatch:slaveLatch.o_qBar
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b7|enabledSRLatch:masterLatch
+i_set => int_sSignal.IN0
+i_reset => int_rSignal.IN0
+i_enable => int_sSignal.IN1
+i_enable => int_rSignal.IN1
+o_q <= o_q~0.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_qBar~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b7|enabledSRLatch:slaveLatch
+i_set => int_sSignal.IN0
+i_reset => int_rSignal.IN0
+i_enable => int_sSignal.IN1
+i_enable => int_rSignal.IN1
+o_q <= o_q~0.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_qBar~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b6
+i_clock => enabledSRLatch:slaveLatch.i_enable
+i_clock => enabledSRLatch:masterLatch.i_enable
+i_d => enabledSRLatch:masterLatch.i_set
+i_d => enabledSRLatch:masterLatch.i_reset
+o_q <= enabledSRLatch:slaveLatch.o_q
+o_qBar <= enabledSRLatch:slaveLatch.o_qBar
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b6|enabledSRLatch:masterLatch
+i_set => int_sSignal.IN0
+i_reset => int_rSignal.IN0
+i_enable => int_sSignal.IN1
+i_enable => int_rSignal.IN1
+o_q <= o_q~0.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_qBar~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b6|enabledSRLatch:slaveLatch
+i_set => int_sSignal.IN0
+i_reset => int_rSignal.IN0
+i_enable => int_sSignal.IN1
+i_enable => int_rSignal.IN1
+o_q <= o_q~0.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_qBar~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b5
+i_clock => enabledSRLatch:slaveLatch.i_enable
+i_clock => enabledSRLatch:masterLatch.i_enable
+i_d => enabledSRLatch:masterLatch.i_set
+i_d => enabledSRLatch:masterLatch.i_reset
+o_q <= enabledSRLatch:slaveLatch.o_q
+o_qBar <= enabledSRLatch:slaveLatch.o_qBar
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b5|enabledSRLatch:masterLatch
+i_set => int_sSignal.IN0
+i_reset => int_rSignal.IN0
+i_enable => int_sSignal.IN1
+i_enable => int_rSignal.IN1
+o_q <= o_q~0.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_qBar~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b5|enabledSRLatch:slaveLatch
+i_set => int_sSignal.IN0
+i_reset => int_rSignal.IN0
+i_enable => int_sSignal.IN1
+i_enable => int_rSignal.IN1
+o_q <= o_q~0.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_qBar~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b4
+i_clock => enabledSRLatch:slaveLatch.i_enable
+i_clock => enabledSRLatch:masterLatch.i_enable
+i_d => enabledSRLatch:masterLatch.i_set
+i_d => enabledSRLatch:masterLatch.i_reset
+o_q <= enabledSRLatch:slaveLatch.o_q
+o_qBar <= enabledSRLatch:slaveLatch.o_qBar
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b4|enabledSRLatch:masterLatch
+i_set => int_sSignal.IN0
+i_reset => int_rSignal.IN0
+i_enable => int_sSignal.IN1
+i_enable => int_rSignal.IN1
+o_q <= o_q~0.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_qBar~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b4|enabledSRLatch:slaveLatch
+i_set => int_sSignal.IN0
+i_reset => int_rSignal.IN0
+i_enable => int_sSignal.IN1
+i_enable => int_rSignal.IN1
+o_q <= o_q~0.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_qBar~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b3
+i_clock => enabledSRLatch:slaveLatch.i_enable
+i_clock => enabledSRLatch:masterLatch.i_enable
+i_d => enabledSRLatch:masterLatch.i_set
+i_d => enabledSRLatch:masterLatch.i_reset
+o_q <= enabledSRLatch:slaveLatch.o_q
+o_qBar <= enabledSRLatch:slaveLatch.o_qBar
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b3|enabledSRLatch:masterLatch
+i_set => int_sSignal.IN0
+i_reset => int_rSignal.IN0
+i_enable => int_sSignal.IN1
+i_enable => int_rSignal.IN1
+o_q <= o_q~0.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_qBar~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b3|enabledSRLatch:slaveLatch
+i_set => int_sSignal.IN0
+i_reset => int_rSignal.IN0
+i_enable => int_sSignal.IN1
+i_enable => int_rSignal.IN1
+o_q <= o_q~0.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_qBar~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b2
+i_clock => enabledSRLatch:slaveLatch.i_enable
+i_clock => enabledSRLatch:masterLatch.i_enable
+i_d => enabledSRLatch:masterLatch.i_set
+i_d => enabledSRLatch:masterLatch.i_reset
+o_q <= enabledSRLatch:slaveLatch.o_q
+o_qBar <= enabledSRLatch:slaveLatch.o_qBar
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b2|enabledSRLatch:masterLatch
+i_set => int_sSignal.IN0
+i_reset => int_rSignal.IN0
+i_enable => int_sSignal.IN1
+i_enable => int_rSignal.IN1
+o_q <= o_q~0.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_qBar~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b2|enabledSRLatch:slaveLatch
+i_set => int_sSignal.IN0
+i_reset => int_rSignal.IN0
+i_enable => int_sSignal.IN1
+i_enable => int_rSignal.IN1
+o_q <= o_q~0.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_qBar~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b1
+i_clock => enabledSRLatch:slaveLatch.i_enable
+i_clock => enabledSRLatch:masterLatch.i_enable
+i_d => enabledSRLatch:masterLatch.i_set
+i_d => enabledSRLatch:masterLatch.i_reset
+o_q <= enabledSRLatch:slaveLatch.o_q
+o_qBar <= enabledSRLatch:slaveLatch.o_qBar
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b1|enabledSRLatch:masterLatch
+i_set => int_sSignal.IN0
+i_reset => int_rSignal.IN0
+i_enable => int_sSignal.IN1
+i_enable => int_rSignal.IN1
+o_q <= o_q~0.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_qBar~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b1|enabledSRLatch:slaveLatch
+i_set => int_sSignal.IN0
+i_reset => int_rSignal.IN0
+i_enable => int_sSignal.IN1
+i_enable => int_rSignal.IN1
+o_q <= o_q~0.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_qBar~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b0
+i_clock => enabledSRLatch:slaveLatch.i_enable
+i_clock => enabledSRLatch:masterLatch.i_enable
+i_d => enabledSRLatch:masterLatch.i_set
+i_d => enabledSRLatch:masterLatch.i_reset
+o_q <= enabledSRLatch:slaveLatch.o_q
+o_qBar <= enabledSRLatch:slaveLatch.o_qBar
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:masterLatch
+i_set => int_sSignal.IN0
+i_reset => int_rSignal.IN0
+i_enable => int_sSignal.IN1
+i_enable => int_rSignal.IN1
+o_q <= o_q~0.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_qBar~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testLab|leftshift8bitregister:inst12|enARdFF_2:b0|enabledSRLatch:slaveLatch
+i_set => int_sSignal.IN0
+i_reset => int_rSignal.IN0
+i_enable => int_sSignal.IN1
+i_enable => int_rSignal.IN1
+o_q <= o_q~0.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_qBar~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
